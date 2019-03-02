@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Taller Ingeniería de Requerimientos</title>
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    {{ bootstrap.load_css() }}
+</head>
+<body>
+<main class="container">
+    <center><h1>Lectura Fichero</h1></center>
+    <hr>
+    {% block content %}{% endblock %}
+    <footer class="fixed-bottom text-center ">
+        {% block footer %}
+            <small>&copy; 2019 <a href="#" title="Written by Luis Miguel Robles and Oscar Diaz">Luis Miguel Robles & Oscar Diaz</a></small>
+        {% endblock %}
+
+    </footer>
+</main>
+
+</body>
+</html>
